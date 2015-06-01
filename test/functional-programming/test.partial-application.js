@@ -2,7 +2,7 @@
  'use strict';
 
   var should = require('should'),
-      partialApplication = require('./../partial-application.js').partialApplication;
+      partialApplication = require('./../../functional-programming/partial-application.js').partialApplication;
 
   describe('partialApplication', function() {
     var sum = function() {

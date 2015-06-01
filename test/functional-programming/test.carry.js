@@ -2,7 +2,7 @@
  'use strict';
 
   var should = require('should'),
-      curry = require('./../curry.js').curry;
+      curry = require('./../../functional-programming/curry.js').curry;
 
   describe('carry', function() {
     var argJoin = function(a1, a2, a3) {
