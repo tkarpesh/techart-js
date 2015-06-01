@@ -1,0 +1,13 @@
+{
+    "name": "techart-js",
+    "version": "0.0.1",
+    "author": "Alexey Zenovich",
+    "main": "index",
+    "scripts": {
+        "test": "node_modules/.bin/mocha -w"
+    },
+    "devDependencies": {
+        "mocha": "*",
+        "should": ">= 0.0.1"
+    }
+}
