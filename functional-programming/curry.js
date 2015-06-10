@@ -7,10 +7,10 @@
       return function(arg) {
         var args = prev.concat(arg);
         if(args.length < n) {
-            return getFunction(args);
+          return getFunction(args);
         }
         else {
-            return fn.apply(this, args);
+          return fn.apply(this, args);
         }
       };
     };

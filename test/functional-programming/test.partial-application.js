@@ -7,7 +7,7 @@
   describe('partialApplication', function() {
     var sum = function() {
       var result = 0;
-      for(var i = 0; i < arguments.length; i++) {
+      for(var i = 0, length = arguments.length; i < length; i++) {
         result += arguments[i];
       }
       return result;
@@ -15,7 +15,7 @@
 
     var multiple = function() {
       var result = 0;
-      for(var i = 0; i < arguments.length; i++) {
+      for(var i = 0, length = arguments.length; i < length; i++) {
         result *= arguments[i];
       }
       return result;

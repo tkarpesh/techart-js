@@ -2,25 +2,13 @@
   'use strict';
 
   var filter = require('./../functional-programming/filter.js').filter,
-      linearFold = require('./../functional-programming/linear-fold.js').linearFold;
-
-  var isEven = function(value) {
-    if(value % 2 === 0) {
-      return true;
-    }
-    else {
-      return false;
-    }
-  }
-
-  var sum = function(a, b) {
-    return a + b;
-  }
+      linearFold = require('./../functional-programming/linear-fold.js').linearFold,
+      common = require('./../functional-programming/common.js');
 
   var averageOfEven = function(array) {
-    var evenNumbers = filter(array, isEven);
+    var evenNumbers = filter(array, common.isEven);
     var len =  evenNumbers.length;
-    return linearFold(evenNumbers, sum) / len;
+    return linearFold(evenNumbers, common.sum) / len;
   }
 
   module.exports.averageOfEven = averageOfEven;

@@ -12,8 +12,8 @@
       result = arr[0];
     }
 
-    for(; i < arr.length; i++) {
-      result = callback.call(this, result, arr[i], i, arr);
+    for(var length = arr.length; i < length; i++) {
+      result = callback(result, arr[i], i, arr);
     }
 
     return result;

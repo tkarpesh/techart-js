@@ -7,17 +7,11 @@
   describe('first', function() {
 
     var condition = function(value) {
-      if(value % 2 === 0) {
-        return true;
-      }
-      return false;
+      return (value % 2 === 0);
     }
 
     var secondCondition = function(value) {
-      if(value > 5) {
-        return true;
-      }
-      return false;
+      return (value > 5);
     }
 
     var testArray = [1, 2, 3, 4, 5, 6, 7, 9, 8];

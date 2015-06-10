@@ -5,11 +5,7 @@
       filter = require('./../../functional-programming/filter.js').filter;
 
   var condition = function(value) {
-    if(value % 2 === 0) {
-      return false;
-    } else {
-      return true;
-    }
+    return !(value % 2 === 0);
   }
 
   describe('filter', function() {
